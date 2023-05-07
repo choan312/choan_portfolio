@@ -1,0 +1,41 @@
+.navbar-container {
+    position: fixed;
+    bottom: 75px;
+    right: 75px;
+    z-index: 1000;
+    background-color: #0A192F;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    color: #E6F1FF;
+    text-align: end;
+    font-size: 16px;
+    color: #64FFDA;
+    line-height: 7px;
+  }
+
+.sidebar-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 93%;
+}

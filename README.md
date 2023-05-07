@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Color Codes
+
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Navy           | ![#0A192F](https://via.placeholder.com/10/0a192f?text=+) `#0A192F` |
+| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
+| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
+| Slate          | ![#8892B0](https://via.placeholder.com/10/8892b0?text=+) `#8892B0` |
+| Light Slate    | ![#A8B2D1](https://via.placeholder.com/10/a8b2d1?text=+) `#A8B2D1` |
+| Lightest Slate | ![#CCD6F6](https://via.placeholder.com/10/ccd6f6?text=+) `#CCD6F6` |
+| White          | ![#E6F1FF](https://via.placeholder.com/10/e6f1ff?text=+) `#E6F1FF` |
+| Green          | ![#64FFDA](https://via.placeholder.com/10/64ffda?text=+) `#64FFDA` |
