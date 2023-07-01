@@ -4,13 +4,13 @@
 
 .headline  {
     color: #CCD6F6;
-    font-size: 64px;
+    font-size: 86px;;
     margin: 3% 0 0 0;
 }
 
 .sub-headline {
     color: #CCD6F6;
-    font-size: 40px;
+    font-size: 46px;
     
 }
 
@@ -22,12 +22,16 @@
 
 .paragraph  {
     color: #8892B0;
-    font-size: 24px;
-    margin: 0 30% 5% 0;
+    font-size: 22px;
+    margin: 0 20% 5% 0;
+    text-align:justify;
+    word-spacing:-2px;
+    line-height: 32px;
 }
 
 .home-text {
-    margin: 50px 50% 0 13%;
+    margin: 50px 55% 0 13%;
+
 }
 
 .say-hi-button {
@@ -47,14 +51,43 @@
 }
 
 .aboutme-text {
-    margin: 400px 50% 0 13%;
+    margin: 400px 60% 0 13%;
 }
 
 .experience-text {
-    margin: 400px 50% 0 13%;
+    margin: 400px 40% 0 13%;
 }
 
 .software-projects-text {
     margin: 400px 50% 0 13%;
 }
 
+.listOfTechs {
+    color: #8892B0;
+    font-size: 22px;
+    margin: 0 20% 5% 0;
+    text-align:justify;
+    word-spacing:-2px;
+    line-height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listOfTechs > div {
+    flex-basis: 55%;
+    font-weight: bold;
+}
+
+.listOfTechs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.listOfTechs ul li:before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #64FFDA;
+    margin-right: 0.5em;
+}
