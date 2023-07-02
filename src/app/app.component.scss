@@ -106,3 +106,21 @@
     font-weight: 400;
     line-height: 1.5;
 }
+
+.header {
+    position: fixed;
+    top: 75px;
+    right: 75px;
+}
+  
+.language-flag {
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+  
+.language-flag:hover {
+    opacity: 0.8;
+}
+

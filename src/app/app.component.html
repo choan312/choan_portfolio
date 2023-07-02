@@ -1,11 +1,16 @@
 <app-navbar></app-navbar>
 
+<div class="header">
+  <img class="language-flag" src="assets/images/usaFlag.png" alt="Language" (click)="switchLanguage('german')" *ngIf="currentLanguageContent === englishContent">
+  <img class="language-flag" src="assets/images/germanFlag.png" alt="Sprache" (click)="switchLanguage('english')" *ngIf="currentLanguageContent === germanContent">
+</div>
+
 <div class="home-text" id="home">
   <img src="assets/images/logo_lightblub.png">
-  <p class="headline">Hey, <span style="color: #64FFDA; font-weight: bold;">Jonas</span> here.</p>
-  <p class="second-headline">I create stuff sometimes</p>
-  <p class="paragraph">I’m a software engineer based in Germany near Kassel. I have great interest in full-stack development with an emphasis to backend, software engineering, artifical intelligence and everything in between.</p>
-  <a class="say-hi-button" href="mailto:jonas.wagner.2001@gmx.de">
+  <p class="headline" data-placeholder="heyBeginning">Hey, <span style="color: #64FFDA; font-weight: bold;">Jonas</span> here.</p>
+  <p class="second-headline" data-placeholder="createStuffText">I create stuff sometimes</p>
+  <p class="paragraph" data-placeholder="homeText">I’m a software engineer based in Germany near Kassel. I have great interest in full-stack development with an emphasis to backend, software engineering, artifical intelligence and everything in between.</p>
+  <a class="say-hi-button" href="mailto:jonas.wagner.2001@gmx.de"  data-placeholder="sayHiButtonText">
     <img class="email-logo-button" src="assets/images/email-logo-white.svg" alt="E-Mail">Say Hi
   </a>
   
@@ -16,8 +21,8 @@
     <h1 class="sub-headline" id="about-me">/ about me</h1>
     <hr>
   </div>
-  <p class="paragraph">I am currently working as a <span style="font-weight: bold;">Software Engineer</span> at <span style="color: #64FFDA">GLS IT Services</span> working in the Geo & Addresses team. At the same time, I am studying for a <span style="font-weight: bold;">Master of Science</span> in <span style="font-weight: bold;">Global Software Development</span> at <span style="color: #64FFDA">Hochschule Fulda</span>.</p>
-  <p class="paragraph">Here are some of the technologies I have worked with:</p>
+  <p class="paragraph" data-placeholder="aboutMeText">I am currently working as a <span style="font-weight: bold;">Software Engineer</span> at <span style="color: #64FFDA">GLS IT Services</span> working in the Geo & Addresses team. At the same time, I am studying for a <span style="font-weight: bold;">Master of Science</span> in <span style="font-weight: bold;">Global Software Development</span> at <span style="color: #64FFDA">Hochschule Fulda</span>.</p>
+  <p class="paragraph" data-placeholder="technologiesWorkedWithText">Here are some of the technologies I have worked with:</p>
   <div class="listOfTechs">
     <div>
       <ul>
@@ -32,10 +37,11 @@
         <li>Angular</li>
         <li>Javascript ES6+</li>
         <li>HTML & CSS</li>
+        <li data-placeholder="someMoreText">Some more</li>
       </ul>
     </div>
   </div>
-  <p class="paragraph">Outside of work, I’m interested in following the developments in science and tech. I also play a lot of video games. And I like listening to Hip Hop, Rap and Rock.</p>
+  <p class="paragraph" data-placeholder="outsideOfWorkText">Outside of work, I’m interested in following the developments in science and tech. I also play a lot of video games. And I like listening to Hip Hop, Rap and Rock.</p>
   <img class="aboutme-image" src="assets/images/aboutme-image.png" alt="About Me">
 </div>
 
@@ -46,7 +52,7 @@
   </div>
   <div class="paragraph">
     <ul>
-      <li>
+      <li data-placeholder="baDualInfoText">
         <h2>Bachelor of Science Angewandte Informatik Dual @ <span style="color:#64FFDA">Hochschule Fulda</span></h2>
         <h3>OKT 2020 - SEP 2023</h3>
         <ul>
@@ -57,7 +63,7 @@
           <li>Certificate for Cisco Certified Network Associate (CCNA)</li>
         </ul>
       </li>
-      <li>
+      <li data-placeholder="dualesStudiumText">
         <h2>Duales Studium Angewandte Informatik @ <span style="color:#64FFDA">GLS Germany</span></h2>
         <h3>AUG 2020 - SEP 2023</h3>
         <ul>
@@ -87,7 +93,7 @@
     <h1 class="sub-headline" id="software-projects">/ software-projects</h1>
     <hr>
   </div>
-  <div class="paragraph">
+  <div class="paragraph" data-placeholder="projectsUniText">
     <h1>Project from University</h1>
     <div>
       <h3>First Programming Project</h3>
@@ -130,7 +136,7 @@
       <p>Java</p>
     </div>
   </div>
-  <div class="paragraph">
+  <div class="paragraph" data-placeholder="projectsWorkText">
     <h1>Project at GLS</h1>
     <div>
       <h3>Meal Plan and Ordering @ GLS Germany</h3>
