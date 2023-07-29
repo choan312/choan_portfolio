@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { englishContent, germanContent } from './language-content';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 interface LanguageContent {
   [key: string]: string;
@@ -8,10 +9,21 @@ interface LanguageContent {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('animationState', [
+      state('start', style({width: '0%'})),
+      state('end', style({width: '100%'})),
+      transition('start => end', animate('2s linear')),
+  ])
+  ]
 })
 export class AppComponent {
   title = 'Jonas\' Portfolio';
+
+  descriptionWithHtml = `
+    Development of Ludo (Mensch <span style="font-size: 18px;">ä</span>rgere dich nicht!) on the console using Java and Jenkins for Continuous Development
+  `;
 
   currentLanguageContent: any;
   englishContent: LanguageContent = englishContent;
@@ -44,12 +56,14 @@ export class AppComponent {
     });
   }
   
-
-  // ngOnInit() {
-  //   this.switchLanguage('german');
-  //   this.replacePlaceholders();
-  // }
+  animationState: string = 'start';
   
+    onAnimationDone(): void {
+      this.animationState = 'start';
+      setTimeout(() => {
+        this.animationState = 'end';
+      }, 500);
+    }
 }
 
 

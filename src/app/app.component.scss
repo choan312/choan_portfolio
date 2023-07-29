@@ -31,7 +31,7 @@
 
 .home-text {
     margin: 50px 55% 0 13%;
-
+    padding-top: 250px;
 }
 
 .say-hi-button {
@@ -124,3 +124,24 @@
     opacity: 0.8;
 }
 
+@keyframes blink {
+    0% {
+        color: #64FFDA;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: #64FFDA;
+    }
+}
+  
+.blinking {
+    animation: blink 1s infinite;
+}
+
+.project-card-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}

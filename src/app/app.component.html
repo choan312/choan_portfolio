@@ -6,7 +6,8 @@
 </div>
 
 <div class="home-text" id="home">
-  <img src="assets/images/logo_lightblub.png">
+  <!-- <img src="assets/images/logo_lightblub.png"> -->
+  <div class="space"></div>
   <p class="headline" data-placeholder="heyBeginning">Hey, <span style="color: #64FFDA; font-weight: bold;">Jonas</span> here.</p>
   <p class="second-headline" data-placeholder="createStuffText">I create stuff sometimes</p>
   <p class="paragraph" data-placeholder="homeText">I’m a software engineer based in Germany near Kassel. I have great interest in full-stack development with an emphasis to backend, software engineering, artifical intelligence and everything in between.</p>
@@ -94,77 +95,98 @@
     <hr>
   </div>
   <div class="paragraph" data-placeholder="projectsUniText">
-    <h1>Project from University</h1>
-    <div>
-      <h3>First Programming Project</h3>
-      <p>A console based text adventure game simulating a typical life of a programmer in Java</p>
-      <p>Java</p>
+    <h1>Projects from University</h1>
+
+    <div class="project-card-grid-container">
+      <app-projects-card
+        title="First Programming Project"
+        description="A console based text adventure game simulating a typical life of a programmer in Java"
+        tech="Java"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="For CI/CD Course"
+        [description]="descriptionWithHtml"
+        tech="Java, Jenkins"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Desing of a custom cache"
+        description="Desing of a custom cache of an existing mircoservice at work and writing a paper about the design"
+        tech="Java"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Small Microcontroller Project"
+        description="Distance detection using small posistion sensors"
+        tech="Assembly"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Monitoring Project"
+        description="Monitor all important services and enable it for end users"
+        tech="Grafana, Prometheus"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Refactoring of a old and bad Swing Project"
+        description="Refactoring of a old and bad Swing Project"
+        tech="Java, Swing"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Development of Organizer App with Flutter"
+        description="Development of Organizer App with Flutter"
+        tech="Flutter, Dart"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Provison of WordPress using OpenStack Cloud and Kubernetes"
+        description="Provison of WordPress using OpenStack Cloud and Kubernetes"
+        tech="Kubernetes, OpenStack, Terraform, Wordpress"
+        githubLink="https://github.com"
+      ></app-projects-card>
     </div>
-    <div>
-      <h3>For CI/CD Course</h3>
-      <p>Development of Ludo (Mensch <span style="font-size: 18px;">ä</span>rgere dich nicht!) on the console using Java and Jenkins for Continuous Development</p>
-      <p>Java, Jenkins</p>
-    </div>
-    <div>
-      <h3>Desing of a custom cache</h3>
-      <p>Desing of a custom cache of an existing mircoservice at work and writing a paper about the design</p>
-      <p>Java</p>
-    </div>
-    <div>
-      <h3>Small Microcontroller Project</h3>
-      <p> Distance detection using small posistion sensors</p>
-      <p>Java</p>
-    </div>
-    <div>
-      <h3>Monitoring Project</h3>
-      <p>Monitor all important services and enable it for end users</p>
-      <p>Java</p>
-    </div>
-    <div>
-      <h3>Refactoring of a old and bad Swing Project</h3>
-      <p>Refactoring of a old and bad Swing Project</p>
-      <p>Java</p>
-    </div>
-    <div>
-      <h3>Development of Organizer App with Flutter</h3>
-      <p>Development of Organizer App with Flutter</p>
-      <p>Java</p>
-    </div>
-    <div>
-      <h3>Provison of WordPress using OpenStack Cloud and Kubernetes</h3>
-      <p>Provison of WordPress using OpenStack Cloud and Kubernetes</p>
-      <p>Java</p>
-    </div>
-  </div>
+
   <div class="paragraph" data-placeholder="projectsWorkText">
-    <h1>Project at GLS</h1>
-    <div>
-      <h3>Meal Plan and Ordering @ GLS Germany</h3>
-      <p>Meal Plan and Ordering @ GLS Germany</p>
-    </div>
-    <div>
-      <h3>Credential Replacement</h3>
-      <p>Development of Credential Replacement for simplifying and securing the test enviroments</p>
-    </div>
-    <div>
-      <h3>Development of a Bulk Request Endpoint for a Geocoding Service</h3>
-      <p>Development of a Bulk Request Endpoint for a Geocoding Service</p>
-      <p>Java, Python</p>
-    </div>
-    <div>
-      <h3>Development of Caching at a Geocoding Service</h3>
-      <p>Development of Caching at a Geocoding Service</p>
-      <p>Java, Python</p>
-    </div>
-    <div>
-      <h3>Monitoring Project</h3>
-      <p>Monitor all important services and enable it for end users</p>
-      <p>Java, Python</p>
-    </div>
-    <div>
-      <h3>Development of an Address Service for my Bachelor Thesis</h3>
-      <p>Development of an Address Service for my Bachelor Thesis</p>
-      <p>Java, Python</p>
+    <h1>Projects at GLS</h1>
+    <div class="project-card-grid-container">
+      <app-projects-card
+        title="Meal Plan and Ordering @ GLS Germany"
+        description="Meal Plan and Ordering @ GLS Germany"
+        tech="HTML, CSS, PHP"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Credential Replacement"
+        description="Development of Credential Replacement for simplifying and securing the test enviroments"
+        tech="Python"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Development of a Bulk Request Endpoint for a Geocoding Service"
+        description="Development of a Bulk Request Endpoint for a Geocoding Service"
+        tech="Java, Spring Boot"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Development of Caching at a Geocoding Service"
+        description="Development of Caching at a Geocoding Service"
+        tech="Java, Spring Boot"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Monitoring Project"
+        description="Monitor all important services and enable it for end users"
+        tech="Grafana, Prometheus"
+        githubLink="https://github.com"
+      ></app-projects-card>
+      <app-projects-card
+        title="Development of an Address Service for my Bachelor Thesis"
+        description="Development of an Address Service for my Bachelor Thesis"
+        tech="Java, Spring Boot, Kubernetes, Docker, Terraform, AWS"
+        githubLink="https://github.com"
+      ></app-projects-card>
     </div>
   </div>
 </div>
