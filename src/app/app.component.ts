@@ -64,6 +64,32 @@ export class AppComponent {
         this.animationState = 'end';
       }, 500);
     }
+
+    redirectToGithubProject(project: string): void {
+      switch (project) {
+        case 'first-programming-project':
+          window.open('https://github.com/DerKrull/Classified', '_blank');
+          break;
+        case 'ludo':
+          window.open('https://gitlab.informatik.hs-fulda.de/', '_blank');
+          break;
+        case 'organizer':
+          window.open('https://github.com/DerKrull/OrganizerApp', '_blank');
+          break;
+        case 'wordpress':
+          window.open('https://gitlab.informatik.hs-fulda.de/fdai6557/internetservices', '_blank');
+          break;
+        case 'refactor':
+          window.open('https://github.com/choan312/documentManagment', '_blank');
+          break;
+        case 'bitbucket':
+          window.open('https://bitbucket.org/', '_blank');
+          break;
+        default:
+          console.log('Project not found');
+          break;
+      }
+      window.open('https://github.com', '_blank');
+    }
+
 }
-
-

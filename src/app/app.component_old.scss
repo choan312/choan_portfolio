@@ -1,0 +1,146 @@
+* {
+    font-family: 'NTR', sans-serif;
+}
+
+.headline  {
+    color: #CCD6F6;
+    font-size: 86px;;
+    margin: 3% 0 0 0;
+}
+
+.sub-headline {
+    color: #CCD6F6;
+    font-size: 46px;
+}
+
+.second-headline  {
+    color: #A8B2D1;
+    font-size: 48px;
+    margin: 0 0 0 0;
+}
+
+.paragraph  {
+    color: #8892B0;
+    font-size: 22px;
+    margin: 0 20% 5% 0;
+    text-align:justify;
+    word-spacing:-2px;
+    line-height: 32px;
+}
+
+.home-text {
+    margin: 50px 55% 0 13%;
+    padding-top: 250px;
+}
+
+.say-hi-button {
+    background-color: #0A192F;
+    color: #64FFDA;
+    border: 3px solid #64FFDA;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 25px 40px 25px 40px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.email-logo-button {
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 0 0;
+}
+
+.aboutme-text {
+    margin: 400px 60% 0 13%;
+}
+
+.experience-text {
+    margin: 400px 40% 0 13%;
+}
+
+.software-projects-text {
+    margin: 400px 50% 0 13%;
+}
+
+.listOfTechs {
+    color: #8892B0;
+    font-size: 22px;
+    margin: 0 20% 5% 0;
+    text-align:justify;
+    word-spacing:-2px;
+    line-height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listOfTechs > div {
+    flex-basis: 55%;
+    font-weight: bold;
+}
+
+.listOfTechs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.listOfTechs ul li:before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #64FFDA;
+    margin-right: 0.5em;
+}
+
+.ending-credits {
+    display: block;
+    box-sizing: border-box;
+    font-family: "NTR",sans-serif;
+    color: #8892b0;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.header {
+    position: fixed;
+    top: 75px;
+    right: 75px;
+}
+  
+.language-flag {
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+  
+.language-flag:hover {
+    opacity: 0.8;
+}
+
+@keyframes blink {
+    0% {
+        color: #64FFDA;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: #64FFDA;
+    }
+}
+  
+.blinking {
+    animation: blink 1s infinite;
+}
+
+.project-card-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}

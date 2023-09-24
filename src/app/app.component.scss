@@ -1,147 +1,348 @@
 * {
     font-family: 'NTR', sans-serif;
-}
+  }
+  
+  .headline  {
+      color: #CCD6F6;
+      font-size: 86px;
+      margin: 3% 0 0 0;
+      line-height: 100px;
+  }
+  
+  .second-headline  {
+      color: #A8B2D1;
+      font-size: 48px;
+      margin: 0 0 0 0;
+      line-height: 75px;
+  }
+  
+  .paragraph  {
+      color: #8892B0;
+      font-size: 22px;
+      margin: 0 10% 3% 0;
+      text-align:justify;
+      word-spacing:-2px;
+      line-height: 28px;
+  }
+  
+  .home-text {
+      margin: 100px 10% 0 15%;
+      padding-top: 100px;
+      width: 45%;
+  }
 
-.headline  {
-    color: #CCD6F6;
-    font-size: 86px;;
-    margin: 3% 0 0 0;
-}
+  .home-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
 
-.sub-headline {
-    color: #CCD6F6;
-    font-size: 46px;
-    
-}
-
-.second-headline  {
-    color: #A8B2D1;
-    font-size: 48px;
-    margin: 0 0 0 0;
-}
-
-.paragraph  {
-    color: #8892B0;
-    font-size: 22px;
-    margin: 0 20% 5% 0;
-    text-align:justify;
-    word-spacing:-2px;
-    line-height: 32px;
-}
-
-.home-text {
-    margin: 50px 55% 0 13%;
-    padding-top: 250px;
-}
-
-.say-hi-button {
+  .home-image {
+    margin-top: 430px;
+    margin-left: -150px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .say-hi-button {
+    font-size: 20px;
+    padding: 15px 30px 15px 30px;
     background-color: #0A192F;
     color: #64FFDA;
     border: 3px solid #64FFDA;
     border-radius: 10px;
-    font-size: 24px;
-    padding: 25px 40px 25px 40px;
     font-weight: bold;
     text-decoration: none !important;
-}
-
-.email-logo-button {
-    width: 20px;
-    height: 20px;
-    margin: 10px 10px 0 0;
-}
-
-.aboutme-text {
-    margin: 400px 60% 0 13%;
-}
-
-.experience-text {
-    margin: 400px 40% 0 13%;
-}
-
-.software-projects-text {
-    margin: 400px 50% 0 13%;
-}
-
-.listOfTechs {
-    color: #8892B0;
-    font-size: 22px;
-    margin: 0 20% 5% 0;
-    text-align:justify;
-    word-spacing:-2px;
-    line-height: 32px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.listOfTechs > div {
-    flex-basis: 55%;
-    font-weight: bold;
-}
-
-.listOfTechs ul {
-    list-style: none;
-    padding: 0;
-}
-
-.listOfTechs ul li:before {
-    content: '';
-    display: inline-block;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #64FFDA;
-    margin-right: 0.5em;
-}
-
-.ending-credits {
-    display: block;
-    box-sizing: border-box;
-    font-family: "NTR",sans-serif;
-    color: #8892b0;
+  }
+  
+  .email-logo-button {
+      width: 15px;
+      height: 15px;
+      margin: 10px 10px 0 0;
+  }
+  
+  .ending-credits {
     text-align: center;
-    width: 100%;
+    font-family: "NTR", sans-serif;
+    color: #8892b0;
     font-size: 16px;
-    padding-bottom: 0px;
-    padding-top: 50px;
     font-weight: 400;
     line-height: 1.5;
-}
+    margin-top: 50px;
+  }
 
-.header {
-    position: fixed;
-    top: 75px;
-    right: 75px;
-}
+  .aboutMe-text {
+    margin: 100px 10% 0 15%;
+    padding-top: 100px;
+    width: 45%;
+  }
   
-.language-flag {
-    width: 45px;
-    height: 30px;
+  .header {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+  }
+  
+  .language-flag {
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      margin-left: 5px;
+  }
+
+  .listOfTechs {
+    display: flex;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  .list {
+    margin-right: 20px;
+    color: #8892B0;
+    font-size: 22px;
+    word-spacing:-2px;
+    line-height: 32px;
+  }
+
+  .listOfTechs ul li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .listOfTechs ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 10px solid #64FFDA;
+  }
+
+  .aboutMe-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .aboutMe-image {
+    margin-top: 430px;
+    margin-left: -150px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .experience-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .experience-text {
+    margin: 100px 10% 0 15%;
+    padding-top: 100px;
+    width: 45%;
+  }
+
+  .experience-second-headline  {
+    color: #64FFDA;
+    font-size: 32px;
+    margin: 0 0 0 0;
+    line-height: 40px;
+  }
+
+  .list-experience {
+    margin-right: 20px;
+    color: #8892B0;
+    font-size: 22px;
+    word-spacing:2px;
+    line-height: 32px;
+  }
+
+  .software-projects-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .software-projects-text {
+    margin: 100px 10% 0 15%;
+    padding-top: 100px;
+    width: 45%;
+  }
+
+  .software-projects-second-headline {
+    color: #64FFDA;
+    font-size: 32px;
+    margin: 0 0 0 0;
+    line-height: 48px;
+  }
+
+  .small-description {
+    color: #A8B2D1;
+    font-size: 18px;
+    word-spacing:-2px;
+    line-height: 12px;
+    text-decoration: underline;
+  }
+
+  .small-description-text {
+    margin-right: 20px;
+    margin-top: -12px;
+    color: #8892B0;
+    font-size: 22px;
+    word-spacing:-2px;
+    line-height: 32px;
+  }
+
+  .link {
+    color: #A8B2D1;
+    font-size: 18px;
+    word-spacing:-2px;
+    line-height: 12px;
+    text-decoration: underline;
+  }
+
+  .link-text {
+    margin-right: 20px;
+    margin-top: -12px;
+    color: #8892B0;
+    font-size: 22px;
+    word-spacing:-2px;
+    line-height: 32px;
+    text-decoration: none !important;
     cursor: pointer;
-    margin-left: 5px;
-}
+  }
   
-.language-flag:hover {
-    opacity: 0.8;
-}
+  .used-tech {
+    color: #A8B2D1;
+    font-size: 18px;
+    word-spacing:-2px;
+    line-height: 12px;
+    text-decoration: underline;
+  }
 
-@keyframes blink {
-    0% {
-        color: #64FFDA;
+  .used-tech-text {
+    margin-right: 20px;
+    margin-top: -12px;
+    color: #8892B0;
+    font-size: 22px;
+    word-spacing:-2px;
+    line-height: 32px;
+  }
+
+  .contact-me-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .contact-me-text {
+    margin: 100px 10% 0 15%;
+    padding-top: 100px;
+    width: 45%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .headline {
+      font-size: 36px;
     }
-    50% {
-        color: white;
-    }
-    100% {
-        color: #64FFDA;
-    }
-}
   
-.blinking {
-    animation: blink 1s infinite;
-}
+    .second-headline {
+      font-size: 24px;
+    }
+  
+    .paragraph {
+      font-size: 16px;
+      margin: 0 5% 3% 0;
+      line-height: 24px;
+    }
+  
+    .home-text {
+      margin: 30px 5% 0 5%;
+      padding-top: 50px;
+      width: 25%;
+    }
 
-.project-card-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
+    .aboutMe-text {
+      margin: 30px 5% 0 5%;
+      padding-top: 50px;
+      width: 25%;
+    }
+
+    .experience-text {
+      margin: 30px 5% 0 5%;
+      padding-top: 50px;
+      width: 25%;
+    }
+  
+    .say-hi-button {
+      font-size: 18px;
+      padding: 10px 20px 10px 20px;
+    }
+  
+    .email-logo-button {
+      width: 12px;
+      height: 12px;
+      margin: 5px 5px 0 0;
+    }
+  
+    .ending-credits {
+      font-size: 12px;
+      padding-top: 10px;
+    }
+  
+    .header {
+      top: 10px;
+      right: 10px;
+    }
+  
+    .language-flag {
+      width: 25px;
+      height: 15px;
+    }
+
+    .small-description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .small-description-text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+    .link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .link-text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+    .used-tech {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .used-tech-text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
