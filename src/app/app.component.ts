@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { englishContent, germanContent } from './language-content';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { inject } from '@vercel/analytics';
 
 interface LanguageContent {
   [key: string]: string;
@@ -31,6 +32,7 @@ export class AppComponent {
 
   constructor() {
     this.currentLanguageContent = this.englishContent;
+    inject();
   }
 
   switchLanguage(language: string) {
