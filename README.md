@@ -1,41 +1,53 @@
-# ChoanPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+<h1 align="center">
+   choan_portfolio
+</h1>
 
-## Development server
+<p align="center">
+   The first iteration of <a href="https://portfolio-jonaswagner.vercel.app/" target="_blank">my Portfolio Website</a> built with Angular using Material UI.
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center">
+   <img width="1200" alt="Screenshot 2021-03-15 at 8 29 18 PM" src="src/assets/images/screenshot_portfolio.png">
+</p>
 
-## Code scaffolding
+## 📝 Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js and npm: https://nodejs.org/
+- Angular CLI: https://cli.angular.io/
 
-## Build
+## 🛠 Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository
 
-## Running unit tests
+   ```sh
+   git clone https://github.com/choan312/choan_portfolio.git
+   cd choan_portfolio
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Install the dependencies
 
-## Running end-to-end tests
+   ```sh
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Start the development server
 
-## Further help
+   ```sh
+   ng serve
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-
-## Color Codes
+## 🎨 Color Codes
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0A192F](https://via.placeholder.com/10/0a192f?text=+) `#0A192F` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892B0](https://via.placeholder.com/10/8892b0?text=+) `#8892B0` |
-| Light Slate    | ![#A8B2D1](https://via.placeholder.com/10/a8b2d1?text=+) `#A8B2D1` |
-| Lightest Slate | ![#CCD6F6](https://via.placeholder.com/10/ccd6f6?text=+) `#CCD6F6` |
-| White          | ![#E6F1FF](https://via.placeholder.com/10/e6f1ff?text=+) `#E6F1FF` |
-| Green          | ![#64FFDA](https://via.placeholder.com/10/64ffda?text=+) `#64FFDA` |
+| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
+| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
+| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
+| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
+| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
+| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+
+## Acknowledgments
+
+Design inspired by [gazijarin](https://github.com/gazijarin)
