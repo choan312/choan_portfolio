@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { englishContent, germanContent } from './language-content';
+import { englishContent, germanContent } from './language-content';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { inject } from '@vercel/analytics';
 
@@ -27,36 +27,36 @@ export class AppComponent {
   `;
 
   currentLanguageContent: any;
-  // englishContent: LanguageContent = englishContent;
-  // germanContent: LanguageContent = germanContent;
+  englishContent: LanguageContent = englishContent;
+  germanContent: LanguageContent = germanContent;
 
   constructor() {
-    // this.currentLanguageContent = this.englishContent;
+    this.currentLanguageContent = this.englishContent;
     inject();
   }
 
-  // switchLanguage(language: string) {
-  //   console.log('switching language to', language);
-  //   if (language === 'german') {
-  //     this.currentLanguageContent = this.germanContent;
-  //     this.replacePlaceholders();
-  //   } else if (language === 'english'){
-  //     this.currentLanguageContent = this.englishContent;
-  //     this.replacePlaceholders();
-  //   } else {
-  //     console.log('Language not supported');
-  //   }
-  // }
+  switchLanguage(language: string) {
+    console.log('switching language to', language);
+    if (language === 'german') {
+      this.currentLanguageContent = this.germanContent;
+      this.replacePlaceholders();
+    } else if (language === 'english'){
+      this.currentLanguageContent = this.englishContent;
+      this.replacePlaceholders();
+    } else {
+      console.log('Language not supported');
+    }
+  }
 
-  // replacePlaceholders() {
-  //   const placeholders: NodeListOf<HTMLElement> = document.querySelectorAll("[data-placeholder]");
-  //   placeholders.forEach((placeholder: HTMLElement) => {
-  //     const key = placeholder.getAttribute("data-placeholder");
-  //     if (key && this.currentLanguageContent[key]) {
-  //       placeholder.innerHTML = this.currentLanguageContent[key];
-  //     }
-  //   });
-  // }
+  replacePlaceholders() {
+    const placeholders: NodeListOf<HTMLElement> = document.querySelectorAll("[data-placeholder]");
+    placeholders.forEach((placeholder: HTMLElement) => {
+      const key = placeholder.getAttribute("data-placeholder");
+      if (key && this.currentLanguageContent[key]) {
+        placeholder.innerHTML = this.currentLanguageContent[key];
+      }
+    });
+  }
   
   animationState: string = 'start';
   
